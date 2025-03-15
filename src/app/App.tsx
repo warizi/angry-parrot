@@ -1,3 +1,4 @@
+import "./app.css";
 import {
   Button,
   ButtonSize,
@@ -8,10 +9,11 @@ import {
   InputWithLabel,
   LabelPosition,
 } from "@shared/components/input";
+import Container from "./layout/Container";
 
 function App() {
   return (
-    <>
+    <Container>
       <Button>만들기</Button>
       <Button type={ButtonType.Outlined}>취소</Button>
       <Button
@@ -50,7 +52,7 @@ function App() {
         errorText="비밀번호를 입력해주세요."
         style={{ marginLeft: 10 }}
       />
-    </>
+    </Container>
   );
 }
 
